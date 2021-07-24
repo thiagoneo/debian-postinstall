@@ -1,0 +1,13 @@
+slick-greeter lightdm lightdm-settings xserver-xorg-core xserver-xorg-video-intel \
+xfce4 xfce4-notifyd xfce4-indicator-plugin pavucontrol pulseaudio gvfs-backends \
+xdg-utils xdg-user-dirs-gtk network-manager-gnome gnome-system-tools gufw \
+adwaita-icon-theme gnome-themes-extra wmctrl numlockx mousepad ristretto \
+thunar-archive-plugin thunar-media-tags-plugin \
+xfce4-clipman-plugin xfce4-datetime-plugin xfce4-genmon-plugin \
+xfce4-screenshooter xfce4-taskmanager xfce4-terminal xfce4-verve-plugin \
+xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin \
+xfce4-power-manager gigolo parole intel-microcode mesa-opencl-icd mesa-utils \
+mesa-va-drivers mesa-vdpau-drivers fonts-cantarell fonts-open-sans \
+fonts-liberation2 fonts-hack fonts-jetbrains-mono fonts-firacode fwupd \
+apt-config-icons-hidpi gnome-software gnome-software-plugin-flatpak aspell-pt-br \
+hunspell-pt-br hyphen-pt-br myspell-pt-br
