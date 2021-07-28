@@ -4,43 +4,45 @@
 # ------------------------------- VARIÁVEIS -----------------------------------#
 SCR_DIRECTORY=`pwd`
 
-PACOTES="slick-greeter lightdm lightdm-settings xserver-xorg-core xserver-xorg-video-intel \
-xfce4 xfce4-notifyd xfce4-indicator-plugin pavucontrol pulseaudio gvfs-backends \
-xdg-utils xdg-user-dirs-gtk network-manager-gnome gnome-system-tools gufw \
-adwaita-icon-theme gnome-themes-extra wmctrl numlockx mousepad ristretto \
+PACOTES="adwaita-icon-theme apt-config-icons-hidpi arj aspell-pt-br \
+brave-browser build-essential clang default-jre file-roller flatpak \
+fonts-cantarell fonts-firacode fonts-hack fonts-jetbrains-mono \
+fonts-liberation2 fonts-noto-cjk fonts-noto-core fonts-open-sans gdebi \
+gnome-packagekit gnome-software gnome-software-plugin-flatpak \
+gnome-system-tools gnome-themes-extra gpart gparted gstreamer1.0-libav \
+gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly \
+gstreamer1.0-vaapi gufw gvfs-backends hunspell-pt-br hyphen-pt-br \
+intel-microcode lhasa libavcodec-extra libreoffice-calc libreoffice-core \
+libreoffice-gtk3 libreoffice-help-pt-br libreoffice-impress \
+libreoffice-l10n-pt-br libreoffice-lightproof-pt-br libreoffice-writer lightdm \
+lightdm-settings lzip lzop mesa-opencl-icd mesa-utils mesa-va-drivers \
+mesa-vdpau-drivers mousepad mtools myspell-pt-br ncompress networkd-dispatcher \
+network-manager-config-connectivity-debian network-manager-gnome ntp numlockx \
+package-update-indicator pavucontrol pulseaudio qt5ct qt5-style-plugins rar \
+ristretto rzip slick-greeter squashfs-tools texlive-fonts-extra \
 thunar-archive-plugin thunar-media-tags-plugin thunar-volman \
-xfce4-clipman-plugin xfce4-datetime-plugin xfce4-genmon-plugin \
+ttf-mscorefonts-installer unace unalz unar unrar unzip vlc wmctrl \
+xdg-user-dirs-gtk xdg-utils xfce4 xfce4-clipman-plugin xfce4-datetime-plugin \
+xfce4-genmon-plugin xfce4-indicator-plugin xfce4-notifyd xfce4-power-manager \
 xfce4-screenshooter xfce4-taskmanager xfce4-terminal xfce4-verve-plugin \
-xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin \
-xfce4-power-manager gigolo parole intel-microcode mesa-opencl-icd mesa-utils \
-mesa-va-drivers mesa-vdpau-drivers fonts-cantarell fonts-open-sans \
-fonts-liberation2 fonts-hack fonts-jetbrains-mono fonts-firacode fwupd \
-apt-config-icons-hidpi gnome-software gnome-software-plugin-flatpak aspell-pt-br \
-hunspell-pt-br hyphen-pt-br myspell-pt-br gstreamer1.0-plugins-good \
-gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav \
-gparted file-roller package-update-indicator gnome-packagekit squashfs-tools \
-gstreamer1.0-vaapi libavcodec-extra zstd zip unzip rar unrar unar brave-browser \
-qt5ct qt5-style-plugins flatpak ntp libreoffice-core libreoffice-calc \
-libreoffice-impress libreoffice-writer libreoffice-l10n-pt-br \
-libreoffice-lightproof-pt-br libreoffice-help-pt-br libreoffice-gtk3 default-jre clang \
-build-essential ttf-mscorefonts-installer unalz arj lhasa lzip lzop ncompress \
-rzip unace gpart mtools xfsprogs fonts-3270 fonts-comfortaa fonts-ibm-plex \
-fonts-league-spartan fonts-lindenhill fonts-mplus fonts-paratype fonts-rufscript \
-fonts-prociono fonts-tomsontalks fonts-vollkorn fonts-sil-andika \
-fonts-sil-gentium-basic fonts-sil-gentiumplus fonts-sil-gentiumplus-compact \
-fonts-noto-core fonts-noto-cjk gdebi"
+xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin xfsprogs \
+xserver-xorg-core xserver-xorg-video-intel zip zstd"
 
-PACOTES_SEM_RECOMMENDS="evince gnome-calendar gnome-calculator geary gnome-2048 \
-gnome-mines gnome-nibbles supertux kolourpaint baobab thunar-font-manager"
+PACOTES_SEM_RECOMMENDS="baobab evince geary gnome-2048 gnome-calculator \
+gnome-calendar gnome-mines gnome-nibbles kolourpaint libreoffice-nlpsolver \
+openclipart-libreoffice supertux thunar-font-manager"
 
-PACOTES_PARA_REMOVER="evolution-data-server firefox-esr at-spi2-core bolt fwupd \
-kwayland-data kwayland-integration qtwayland5 sane-utils tango-icon-theme telnet"
+PACOTES_PARA_REMOVER="evolution-data-server firefox-esr at-spi2-core bolt \
+fwupd kwayland-data kwayland-integration qtwayland5 sane-utils \
+tango-icon-theme telnet fonts-noto-color-emoji"
 
 
 #------------------------- CONFIGURAR REPOSITÓRIOS ----------------------------#
 sudo apt update
 while :; do sudo -v; sleep 59; done &
 infiloop=$!
+
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bkp
 
 echo 'deb http://deb.debian.org/debian bullseye main contrib non-free' | sudo tee /etc/apt/sources.list
 echo 'deb-src http://deb.debian.org/debian bullseye main contrib non-free' | sudo tee -a /etc/apt/sources.list
@@ -90,6 +92,8 @@ sudo cp -rp $SCR_DIRECTORY/system-files/etc/skel/ /etc/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/lightdm/ /etc/
 sudo \cp $SCR_DIRECTORY/system-files/etc/drirc /etc/
 sudo \cp $SCR_DIRECTORY/system-files/etc/default/grub /etc/default/grub
+sudo cp /etc/network/interfaces /etc/network/interfaces.bkp
+sudo \cp $SCR_DIRECTORY/system-files/etc/network/interfaces /etc/network/interfaces
 echo "vm.swappiness=25" | sudo tee -a /etc/sysctl.conf
 echo "vm.vfs_cache_pressure=50" | sudo tee -a /etc/sysctl.conf
 echo "vm.dirty_background_ratio=5" | sudo tee -a /etc/sysctl.conf
