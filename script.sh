@@ -20,14 +20,13 @@ mesa-vdpau-drivers mousepad mtools myspell-pt-br ncompress networkd-dispatcher \
 network-manager-config-connectivity-debian network-manager-gnome ntp numlockx \
 package-update-indicator pavucontrol pulseaudio qt5ct qt5-style-plugins rar \
 ristretto rzip slick-greeter squashfs-tools texlive-fonts-extra \
-texlive-fonts-recommended thunar-archive-plugin \
-thunar-media-tags-plugin thunar-volman ttf-mscorefonts-installer unace unalz \
-unar unrar unzip vlc wmctrl xdg-user-dirs-gtk xdg-utils xfce4 \
-xfce4-clipman-plugin xfce4-datetime-plugin xfce4-genmon-plugin \
-xfce4-indicator-plugin xfce4-notifyd xfce4-power-manager xfce4-screenshooter \
-xfce4-taskmanager xfce4-terminal xfce4-verve-plugin \
-xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin xfsprogs \
-xserver-xorg-core xserver-xorg-video-intel zip zstd"
+texlive-fonts-recommended thunar-archive-plugin thunar-media-tags-plugin \
+thunar-volman ttf-mscorefonts-installer unace unalz unar unrar unzip vlc \
+wmctrl xdg-user-dirs-gtk xdg-utils xfce4 xfce4-clipman-plugin \
+xfce4-datetime-plugin xfce4-genmon-plugin xfce4-indicator-plugin xfce4-notifyd \
+xfce4-power-manager xfce4-screenshooter xfce4-taskmanager xfce4-terminal \
+xfce4-verve-plugin xfce4-weather-plugin xfce4-whiskermenu-plugin \
+xfce4-xkb-plugin xfsprogs xserver-xorg-core xserver-xorg-video-intel zip zstd"
 
 PACOTES_SEM_RECOMMENDS="baobab evince geary gnome-2048 gnome-calculator \
 gnome-calendar gnome-mines gnome-nibbles kolourpaint libreoffice-nlpsolver \
