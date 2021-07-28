@@ -108,9 +108,7 @@ sudo systemctl set-default graphical.target
 sudo systemctl enable ufw
 sudo ufw enable
 sudo plymouth-set-default-theme -R homeworld
-###### Para garantir que a configuração do lightdm tenha efeito ######
-sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter 
-sudo dpkg-reconfigure numlockx 
+sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx 
 
 
 #-------------------------- CONFIGURAÇÃO DO FLATPAK ---------------------------#
@@ -121,10 +119,9 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo cp -rp /etc/skel/.config/ /etc/skel/.local/ $HOME/
 sudo chown -R $USER:$USER $HOME/.config $HOME/.local
 
-kill "$infiloop"
-
 
 #------------------------------------ FIM -------------------------------------#
+kill "$infiloop"
 clear
 echo "Chegamos ao fim."
 echo "Você pode reiniciar agora com o comando '/sbin/reboot'."

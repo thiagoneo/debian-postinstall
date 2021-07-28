@@ -1,6 +1,6 @@
 #!/bin/bash
 ########### Instalação de pacotes flatpak #############
-flatpak install flathub com.github.tchx84.Flatseal com.snes9x.Snes9x com.sublimetext.three org.geogebra.GeoGebra org.stellarium.Stellarium
+flatpak install flathub com.github.tchx84.Flatseal com.snes9x.Snes9x org.geogebra.GeoGebra org.stellarium.Stellarium de.haeckerfelix.Fragments
 
 ########## Instalação de temas para apps flatpak ######
 sudo apt install ostree appstream-util -y
