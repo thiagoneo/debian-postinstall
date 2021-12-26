@@ -1,0 +1,15 @@
+dconf-editor
+dunst
+evince
+gdebi
+gnome-calculator
+gnome-mines
+gnome-nibbles
+gnome-packagekit
+gnome-sudoku
+gvfs-backends
+package-update-indicator
+quadrapassel
+software-properties-gtk
+supertux
+texlive-fonts-recommended

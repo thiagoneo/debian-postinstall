@@ -1,0 +1,7 @@
+com.adobe.Flash-Player-Projector
+com.github.tchx84.Flatseal
+de.haeckerfelix.Fragments
+net.supertuxkart.SuperTuxKart
+org.geogebra.GeoGebra
+org.stellarium.Stellarium
+org.libreoffice.LibreOffice
