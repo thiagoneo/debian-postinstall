@@ -39,6 +39,15 @@ sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
 sudo apt-mark hold dunst
 
 ##### Instalação de pacotes locais #####
+cd /tmp
+wget -c https://github.com/Foundry376/Mailspring/releases/download/1.9.2/mailspring-1.9.2-amd64.deb
+if [[ $? == 0 ]]; then
+    mv mailspring-1.9.2-amd64.deb $SCR_DIRECTORY/packages/
+fi
+wget -c http://packages.linuxmint.com/pool/main/m/mint-backgrounds-ulyssa/mint-backgrounds-ulyssa_1.1_all.deb
+if [[ $? == 0 ]]; then
+    mv mint-backgrounds-ulyssa_1.1_all.deb $SCR_DIRECTORY/packages/
+fi
 sudo dpkg -i $SCR_DIRECTORY/packages/*.deb
 sudo apt install -f -y
 
