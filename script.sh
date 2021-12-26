@@ -59,7 +59,7 @@ sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx
 
 #--------------------- CONFIGURAR ARQUIVOS DO SISTEMA -------------------------#
 cd $HOME
-sudo chown -R root:root $SCR_DIRECTORY/files/
+sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/lightdm/ /etc/
 sudo \cp $SCR_DIRECTORY/system-files/etc/drirc /etc/
