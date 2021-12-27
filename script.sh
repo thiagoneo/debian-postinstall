@@ -25,11 +25,24 @@ echo 'deb-src http://deb.debian.org/debian bullseye-backports main contrib non-f
 
 sudo apt update
 
-#---------------------------- INSTALAR PACOTES --------------------------------#
+#------------------------- APLICAR ATUALIZAÇÕES -------------------------------#
+
 echo ""
 echo "INICIANDO ATUALIZAÇÃO COMPLETA DO SISTEMA..."
 echo ""
 sudo apt upgrade -y
+
+#------------------------ INSTALAR SLICK GREETER ------------------------------#
+
+echo "INSTALANDO SLICK GREETER..."
+sudo apt install slick-greeter lightdm-settings -y
+
+#--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 1 -----------------#
+sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
+sudo apt autoremove --purge -y
+sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx 
+
+#--------------------- INSTALAR PACOTES DO REPOSITÓRIO ------------------------#
 
 echo ""
 echo "INSTALANDO PACOTES..."
@@ -38,7 +51,8 @@ sudo apt install $(cat $SCR_DIRECTORY/pacotes-sem-recommends.txt) --no-install-r
 sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
 sudo apt-mark hold dunst
 
-##### Instalação de pacotes locais #####
+#---------------------- INSTALAR PACOTES DO LOCAIS ----------------------------#
+
 cd /tmp
 wget -c https://github.com/Foundry376/Mailspring/releases/download/1.9.2/mailspring-1.9.2-amd64.deb
 if [[ $? == 0 ]]; then
@@ -49,12 +63,11 @@ if [[ $? == 0 ]]; then
     mv mint-backgrounds-ulyssa_1.1_all.deb $SCR_DIRECTORY/packages/
 fi
 sudo dpkg -i $SCR_DIRECTORY/packages/*.deb
-sudo apt install -f -y
+sudo apt install -f --no-install-recommends -y
 
-#------------------- DESINSTALAR PACOTES DESNECESSÁRIOS -----------------------#
+#--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 2 -----------------#
 sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
 sudo apt autoremove --purge -y
-sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx 
 
 
 #--------------------- CONFIGURAR ARQUIVOS DO SISTEMA -------------------------#
