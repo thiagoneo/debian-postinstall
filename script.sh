@@ -64,6 +64,7 @@ wget -c http://packages.linuxmint.com/pool/main/m/mint-backgrounds-ulyssa/mint-b
 if [[ $? == 0 ]]; then
     mv mint-backgrounds-ulyssa_1.1_all.deb $SCR_DIRECTORY/packages/
 fi
+$SCR_DIRECTORY
 sudo dpkg -i $SCR_DIRECTORY/packages/*.deb
 sudo apt install -f --no-install-recommends -y
 
