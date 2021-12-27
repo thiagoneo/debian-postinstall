@@ -45,7 +45,7 @@ sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx
 #--------------------- INSTALAR PACOTES DO REPOSITÓRIO ------------------------#
 
 echo ""
-echo "INSTALANDO PACOTES..."
+echo "INSTALANDO PACOTES DO REPOSITÓRIO..."
 echo ""
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-sem-recommends.txt) --no-install-recommends -y
 sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
@@ -53,6 +53,8 @@ sudo apt-mark hold dunst
 
 #---------------------- INSTALAR PACOTES DO LOCAIS ----------------------------#
 
+echo ""
+echo "INSTALANDO PACOTES DO LOCAIS..."
 cd /tmp
 wget -c https://github.com/Foundry376/Mailspring/releases/download/1.9.2/mailspring-1.9.2-amd64.deb
 if [[ $? == 0 ]]; then
