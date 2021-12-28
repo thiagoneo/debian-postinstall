@@ -2,12 +2,14 @@ dconf-editor
 dunst
 evince
 gdebi
+gigolo
 gnome-calculator
 gnome-mines
 gnome-nibbles
 gnome-packagekit
 gnome-sudoku
 gvfs-backends
+neofetch
 package-update-indicator
 quadrapassel
 software-properties-gtk

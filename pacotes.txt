@@ -17,7 +17,6 @@ fonts-liberation2
 fonts-noto-cjk
 fonts-noto-core
 fonts-open-sans
-gigolo
 git
 gnome-system-tools
 gnome-themes-extra
@@ -35,9 +34,9 @@ hyphen-pt-br
 idle3
 libavcodec-extra
 lightdm-settings
-neofetch
 numlockx
 openjdk-17-jdk
+p7zip-full
 parole
 plymouth
 plymouth-label
@@ -55,7 +54,6 @@ unrar
 unzip
 vlc
 wmctrl
-xdg-user-dirs-gtk
 xserver-xorg-video-intel
 zip
 zstd
