@@ -92,6 +92,7 @@ echo z3fold | sudo tee -a /etc/initramfs-tools/modules
 sudo update-initramfs -u
 sudo update-grub
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
+sudo systemctl mask hybrid-suspension.target
 sudo systemctl enable ufw
 sudo ufw enable
 sudo plymouth-set-default-theme -R homeworld
