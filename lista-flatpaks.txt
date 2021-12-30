@@ -5,3 +5,6 @@ net.supertuxkart.SuperTuxKart
 org.geogebra.GeoGebra
 org.stellarium.Stellarium
 org.libreoffice.LibreOffice
+org.gtk.Gtk3theme.Matcha-azul
+org.gtk.Gtk3theme.Matcha-dark-azul
+org.gtk.Gtk3theme.Matcha-light-azul
