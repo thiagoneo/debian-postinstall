@@ -65,9 +65,9 @@ wget -c http://packages.linuxmint.com/pool/main/m/mint-backgrounds-ulyssa/mint-b
 if [[ $? == 0 ]]; then
     mv mint-backgrounds-ulyssa_1.1_all.deb $SCR_DIRECTORY/packages/
 fi
-$SCR_DIRECTORY
-sudo dpkg -i $SCR_DIRECTORY/packages/*.deb
-sudo apt install -f --no-install-recommends -y
+cd $SCR_DIRECTORY
+ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
+sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
 
 #--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 2 -----------------#
 sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
@@ -92,7 +92,7 @@ echo z3fold | sudo tee -a /etc/initramfs-tools/modules
 sudo update-initramfs -u
 sudo update-grub
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
-sudo systemctl mask hybrid-suspension.target
+sudo systemctl mask hybrid-sleep.target
 sudo systemctl enable ufw
 sudo ufw enable
 sudo plymouth-set-default-theme -R homeworld
