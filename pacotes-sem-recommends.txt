@@ -9,6 +9,7 @@ gnome-nibbles
 gnome-packagekit
 gnome-sudoku
 gvfs-backends
+kolourpaint
 neofetch
 package-update-indicator
 quadrapassel
