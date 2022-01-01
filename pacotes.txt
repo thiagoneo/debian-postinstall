@@ -1,12 +1,16 @@
 apt-config-icons-hidpi
 aspell-pt-br
+baobab
 build-essential
 catfish
 chromium
 chromium-l10n
 clang
 cmatrix
+default-jdk
 file-roller
+firmware-realtek
+firmware-misc-nonfree
 flatpak
 fonts-cantarell
 fonts-firacode
@@ -18,6 +22,7 @@ fonts-noto-cjk
 fonts-noto-core
 fonts-open-sans
 git
+gnome-disk-utility
 gnome-system-tools
 gnome-themes-extra
 gparted
@@ -35,7 +40,6 @@ idle3
 libavcodec-extra
 lightdm-settings
 numlockx
-openjdk-17-jdk
 p7zip-full
 parole
 plymouth
