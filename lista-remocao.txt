@@ -1,5 +1,4 @@
 atril
-at-spi2-core
 bolt
 cm-super
 cups*
