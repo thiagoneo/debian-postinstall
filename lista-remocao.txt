@@ -29,5 +29,6 @@ system-config-printer*
 tango-icon-theme
 texlive-fonts-extra-links
 texlive-latex-extra
+xarchiver
 xsane*
 xterm
