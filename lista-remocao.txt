@@ -3,6 +3,7 @@ bolt
 cm-super
 cups*
 exfalso
+firefox-esr*
 fonts-adf-berenis
 fonts-dejavu-extra
 fonts-ebgaramond-extra
