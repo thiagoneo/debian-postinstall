@@ -79,7 +79,6 @@ cd $HOME
 sudo chown -R root:root $SCR_DIRECTORY/system-files/
 cd $SCR_DIRECTORY/
 sudo \cp -rf $SCR_DIRECTORY/system-files/etc/lightdm/ /etc/
-sudo \cp $SCR_DIRECTORY/system-files/etc/drirc /etc/
 sudo \cp $SCR_DIRECTORY/system-files/etc/default/grub /etc/default/grub
 sudo \cp $SCR_DIRECTORY/system-files/etc/grub.d/10_linux /etc/grub.d/10_linux
 sudo mv /usr/share/dbus-1/services/org.knopwob.dunst.service /usr/share/dbus-1/services/org.knopwob.dunst.service.disabled
