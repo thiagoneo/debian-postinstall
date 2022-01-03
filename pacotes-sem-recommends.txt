@@ -3,16 +3,12 @@ dunst
 evince
 gdebi
 gigolo
-gnome-calculator
-gnome-mines
-gnome-nibbles
 gnome-packagekit
 gnome-sudoku
 gvfs-backends
 kolourpaint
 neofetch
 package-update-indicator
-quadrapassel
 software-properties-gtk
 supertux
 texlive-fonts-recommended
