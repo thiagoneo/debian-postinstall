@@ -3,8 +3,6 @@ aspell-pt-br
 baobab
 build-essential
 catfish
-chromium
-chromium-l10n
 clang
 cmatrix
 default-jdk
