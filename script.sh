@@ -27,14 +27,13 @@ echo 'deb-src http://deb.debian.org/debian bullseye-backports main contrib non-f
 sudo apt update
 
 #------------------------- APLICAR ATUALIZAÇÕES -------------------------------#
-
 echo ""
 echo "INICIANDO ATUALIZAÇÃO COMPLETA DO SISTEMA..."
 echo ""
 sudo apt upgrade -y
 
-#------------------------ INSTALAR SLICK GREETER ------------------------------#
 
+#------------------------ INSTALAR SLICK GREETER ------------------------------#
 echo "INSTALANDO SLICK GREETER..."
 sudo apt install slick-greeter lightdm-settings numlockx -y
 
@@ -43,8 +42,8 @@ sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
 sudo apt autoremove --purge -y
 sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx 
 
-#--------------------- INSTALAR PACOTES DO REPOSITÓRIO ------------------------#
 
+#--------------------- INSTALAR PACOTES DO REPOSITÓRIO ------------------------#
 echo ""
 echo "INSTALANDO PACOTES DO REPOSITÓRIO..."
 echo ""
@@ -52,8 +51,8 @@ sudo apt install $(cat $SCR_DIRECTORY/pacotes-sem-recommends.txt) --no-install-r
 sudo apt install $(cat $SCR_DIRECTORY/pacotes.txt) -y
 sudo apt-mark hold dunst
 
-#---------------------- INSTALAR PACOTES DO LOCAIS ----------------------------#
 
+#---------------------- INSTALAR PACOTES DO LOCAIS ----------------------------#
 echo ""
 echo "INSTALANDO PACOTES DO LOCAIS..."
 cd /tmp
@@ -68,6 +67,7 @@ fi
 cd $SCR_DIRECTORY
 ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
+
 
 #--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 2 -----------------#
 sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
@@ -106,6 +106,28 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo cp -rp /etc/skel/.config/ /etc/skel/.local/ $HOME/
 sudo chown -R $USER:$USER $HOME/.config $HOME/.local
 
+
+#----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
+sudo echo "Iniciando instalação de Flatpaks"
+flatpak install flathub $(cat lista-flatpaks.txt)
+
+########## Instalação de temas para apps flatpak ######
+sudo apt install ostree appstream-util -y
+cd $HOME
+git clone https://github.com/refi64/stylepak.git
+cd stylepak
+bash stylepak install-system Fluent
+bash stylepak install-system Fluent-compact
+bash stylepak install-system Fluent-dark
+bash stylepak install-system Fluent-dark-compact
+bash stylepak install-system Fluent-light
+bash stylepak install-system Fluent-light-compact
+bash stylepak install-system Fluent-round
+bash stylepak install-system Fluent-round-compact
+bash stylepak install-system Fluent-round-dark
+bash stylepak install-system Fluent-round-dark-compact
+bash stylepak install-system Fluent-round-light
+bash stylepak install-system Fluent-round-light-compact
 
 #------------------------------------ FIM -------------------------------------#
 kill "$infiloop"
