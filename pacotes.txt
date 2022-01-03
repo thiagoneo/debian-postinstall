@@ -21,6 +21,8 @@ fonts-liberation2
 fonts-noto-cjk
 fonts-noto-core
 fonts-open-sans
+fonts-ubuntu
+fonts-ubuntu-title
 git
 gnome-disk-utility
 gnome-system-tools
