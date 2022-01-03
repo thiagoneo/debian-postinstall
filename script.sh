@@ -129,6 +129,9 @@ bash stylepak install-system Fluent-round-dark-compact
 bash stylepak install-system Fluent-round-light
 bash stylepak install-system Fluent-round-light-compact
 
+#### Definir Firefox (flatpak) como navegador padrão do sistema
+sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser /var/lib/flatpak/exports/bin/org.mozilla.firefox 200 && sudo update-alternatives --set x-www-browser /var/lib/flatpak/exports/bin/org.mozilla.firefox
+
 #------------------------------------ FIM -------------------------------------#
 kill "$infiloop"
 clear
