@@ -11,3 +11,6 @@ org.gtk.Gtk3theme.Matcha-light-azul
 org.mozilla.firefox
 org.chromium.Chromium
 org.gnome.Calculator
+org.gnome.Nibbles
+org.gnome.Mines
+org.gnome.Quadrapassel
