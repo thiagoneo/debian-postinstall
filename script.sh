@@ -68,6 +68,11 @@ cd $SCR_DIRECTORY
 ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
 
+#-------------------------- INSTALAÇÃO VIRTUALBOX -----------------------------#
+echo 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bullseye contrib' | sudo tee /etc/apt/sources.list.d/virtualbox.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo apt update
+sudo apt install virtualbox-6.1 -y
 
 #--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 2 -----------------#
 sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
