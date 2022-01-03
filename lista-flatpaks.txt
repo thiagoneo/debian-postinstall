@@ -10,3 +10,4 @@ org.gtk.Gtk3theme.Matcha-dark-azul
 org.gtk.Gtk3theme.Matcha-light-azul
 org.mozilla.firefox
 org.chromium.Chromium
+org.gnome.Calculator
