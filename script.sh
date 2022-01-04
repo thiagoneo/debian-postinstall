@@ -108,8 +108,8 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 
 #-------------------------- CONFIGURAÇÃO DO USUÁRIO ---------------------------#
-sudo cp -rp /etc/skel/.config/ /etc/skel/.local/ $HOME/
-sudo chown -R $USER:$USER $HOME/.config $HOME/.local
+sudo cp -rp /etc/skel/.config/ /etc/skel/.local/ /etc/skel/.var/ $HOME/ 
+sudo chown -R $USER:$USER $HOME/.config $HOME/.local $HOME/.var
 
 
 #----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
