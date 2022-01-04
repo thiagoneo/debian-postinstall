@@ -87,6 +87,8 @@ sudo \cp -rf $SCR_DIRECTORY/system-files/etc/lightdm/ /etc/
 sudo \cp $SCR_DIRECTORY/system-files/etc/default/grub /etc/default/grub
 sudo \cp $SCR_DIRECTORY/system-files/etc/grub.d/10_linux /etc/grub.d/10_linux
 sudo mv /usr/share/dbus-1/services/org.knopwob.dunst.service /usr/share/dbus-1/services/org.knopwob.dunst.service.disabled
+sudo rm /usr/share/icons/default/index.theme
+sudo cp $SCR_DIRECTORY/system-files/usr/share/icons/default/index.theme /usr/share/icons/default/
 echo "vm.swappiness=25" | sudo tee -a /etc/sysctl.conf
 echo "vm.vfs_cache_pressure=50" | sudo tee -a /etc/sysctl.conf
 echo "vm.dirty_background_ratio=5" | sudo tee -a /etc/sysctl.conf
