@@ -114,7 +114,7 @@ sudo chown -R $USER:$USER $HOME/.config $HOME/.local
 
 #----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
 sudo echo "Iniciando instalação de Flatpaks"
-flatpak install flathub $(cat lista-flatpaks.txt)
+sudo flatpak install flathub $(cat lista-flatpaks.txt) -y
 
 ########## Instalação de temas para apps flatpak ######
 sudo apt install ostree appstream-util -y
