@@ -17,3 +17,4 @@ org.gtk.Gtk3theme.Matcha-light-azul
 org.libreoffice.LibreOffice
 org.mozilla.firefox
 org.stellarium.Stellarium
+runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/21.08
