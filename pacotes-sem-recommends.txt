@@ -4,7 +4,6 @@ evince
 gdebi
 gigolo
 gnome-packagekit
-gnome-sudoku
 gvfs-backends
 kolourpaint
 neofetch
