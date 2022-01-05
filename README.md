@@ -10,4 +10,4 @@ Uso:
    chmod +x start-script.sh
    ./start-script.sh
    ```
-4. Os arquivos necessários serão baixados, juntamente com o script principal (, que será executado em seguida. Após o término da execução, reiniciar com o comando 
+4. Os arquivos necessários serão baixados, juntamente com o script principal (`script.sh`), que será executado em seguida. Após o término da execução, reiniciar com o comando 
