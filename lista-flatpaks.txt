@@ -11,6 +11,7 @@ org.gnome.Calculator
 org.gnome.Mines
 org.gnome.Nibbles
 org.gnome.Quadrapassel
+org.gnome.Sudoku
 org.gtk.Gtk3theme.Matcha-azul
 org.gtk.Gtk3theme.Matcha-dark-azul
 org.gtk.Gtk3theme.Matcha-light-azul
