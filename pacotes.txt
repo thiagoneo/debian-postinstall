@@ -6,6 +6,7 @@ catfish
 clang
 cmatrix
 default-jdk
+ffmpeg
 file-roller
 firmware-realtek
 firmware-misc-nonfree
@@ -20,7 +21,6 @@ fonts-noto-cjk
 fonts-noto-core
 fonts-open-sans
 fonts-ubuntu
-fonts-ubuntu-title
 git
 gnome-disk-utility
 gnome-system-tools
