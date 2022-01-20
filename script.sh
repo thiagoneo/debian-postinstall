@@ -119,6 +119,21 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo cp -rp /etc/skel/.config/ /etc/skel/.local/ /etc/skel/.var/ $HOME/ 
 sudo chown -R $USER:$USER $HOME/.config $HOME/.local $HOME/.var
 
+#---------------------------- INSTALAÇÃO DE TEMAS -----------------------------#
+#### Fluent GTK Theme ###
+cd $SCR_DIRECTORY/
+git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
+cd Fluent-gtk-theme/
+sudo ./install.sh --icon debian
+sudo ./install.sh --icon debian --tweaks round
+
+### Fluent icon theme ###
+cd $SCR_DIRECTORY/
+git clone https://github.com/vinceliuice/Fluent-icon-theme.git
+cd Fluent-icon-theme/
+sudo ./install.sh
+cd cursors/
+sudo ./install.sh
 
 #----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
 sudo echo "Iniciando instalação de Flatpaks"
@@ -126,7 +141,7 @@ sudo flatpak install flathub $(cat lista-flatpaks.txt) -y
 
 ########## Instalação de temas para apps flatpak ######
 sudo apt install ostree appstream-util -y
-cd $HOME
+cd $SCR_DIRECTORY/
 git clone https://github.com/refi64/stylepak.git
 cd stylepak
 bash stylepak install-system Fluent
