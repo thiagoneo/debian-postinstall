@@ -48,6 +48,7 @@ plymouth-themes
 qt5ct
 qt5-style-plugins
 rar
+sassc
 slick-greeter
 synaptic
 texlive-fonts-extra
