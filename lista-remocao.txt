@@ -20,6 +20,7 @@ fonts-oflb-asana-math
 fonts-sil-charis
 fonts-sil-gentium
 fonts-stix
+fwupd
 hv3
 libreoffice*
 libuno*
