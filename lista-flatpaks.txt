@@ -3,7 +3,6 @@ com.github.tchx84.Flatseal
 de.haeckerfelix.Fragments
 net.supertuxkart.SuperTuxKart
 org.apache.netbeans
-org.chromium.Chromium
 org.eclipse.Java
 org.geany.Geany
 org.geogebra.GeoGebra
