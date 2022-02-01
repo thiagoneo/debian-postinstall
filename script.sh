@@ -126,6 +126,9 @@ git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
 cd Fluent-gtk-theme/
 sudo ./install.sh --icon debian
 sudo ./install.sh --icon debian --tweaks round
+cd /usr/share/themes/
+sudo tar -xzvf $SCR_DIRECTORY/fluent-theme-patch.tar.gz
+cd $SCR_DIRECTORY/
 
 ### Fluent icon theme ###
 cd $SCR_DIRECTORY/
