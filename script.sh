@@ -144,7 +144,7 @@ sudo ./install.sh
 #----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
 cd $SCR_DIRECTORY/
 sudo echo "Iniciando instalação de Flatpaks"
-sudo flatpak install flathub $(cat cd $SCR_DIRECTORY/lista-flatpaks.txt) -y
+sudo flatpak install flathub $(cat $SCR_DIRECTORY/lista-flatpaks.txt) -y
 
 ########## Instalação de temas para apps flatpak ######
 sudo apt install ostree appstream-util -y
