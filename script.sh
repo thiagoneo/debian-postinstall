@@ -128,7 +128,6 @@ sudo ./install.sh --icon debian
 sudo ./install.sh --icon debian --tweaks round
 cd /usr/share/themes/
 sudo tar -xzvf $SCR_DIRECTORY/fluent-theme-patch.tar.gz
-cd $SCR_DIRECTORY/
 
 ### Fluent icon theme ###
 cd $SCR_DIRECTORY/
@@ -139,8 +138,9 @@ cd cursors/
 sudo ./install.sh
 
 #----------------------- INSTALAÇÃO DE PACOTES FLATPAK ------------------------#
+cd $SCR_DIRECTORY/
 sudo echo "Iniciando instalação de Flatpaks"
-sudo flatpak install flathub $(cat lista-flatpaks.txt) -y
+sudo flatpak install flathub $(cat cd $SCR_DIRECTORY/lista-flatpaks.txt) -y
 
 ########## Instalação de temas para apps flatpak ######
 sudo apt install ostree appstream-util -y
