@@ -1,10 +1,8 @@
 com.adobe.Flash-Player-Projector
 com.github.tchx84.Flatseal
 de.haeckerfelix.Fragments
-net.supertuxkart.SuperTuxKart
 org.apache.netbeans
 org.eclipse.Java
-org.geany.Geany
 org.geogebra.GeoGebra
 org.gnome.Calculator
 org.gnome.Mines
