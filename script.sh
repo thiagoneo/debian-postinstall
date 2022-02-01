@@ -64,6 +64,10 @@ wget -c http://packages.linuxmint.com/pool/main/m/mint-backgrounds-ulyssa/mint-b
 if [[ $? == 0 ]]; then
     mv mint-backgrounds-ulyssa_1.1_all.deb $SCR_DIRECTORY/packages/
 fi
+wget -c http://packages.linuxmint.com/pool/main/m/mint-backgrounds-uma/mint-backgrounds-uma_1.2_all.deb
+if [[ $? == 0 ]]; then
+    mv mint-backgrounds-uma_1.2_all.deb $SCR_DIRECTORY/packages/
+fi
 cd $SCR_DIRECTORY
 ls $SCR_DIRECTORY/packages/*.deb > pacotes-locais.txt
 sudo apt install $(cat $SCR_DIRECTORY/pacotes-locais.txt) --no-install-recommends -y
