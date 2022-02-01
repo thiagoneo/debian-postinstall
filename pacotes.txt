@@ -21,6 +21,7 @@ fonts-noto-cjk
 fonts-noto-core
 fonts-open-sans
 fonts-ubuntu
+geany
 git
 gnome-disk-utility
 gnome-system-tools
