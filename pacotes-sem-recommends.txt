@@ -4,6 +4,8 @@ evince
 gdebi
 gigolo
 gnome-packagekit
+gnome-software
+gnome-software-plugin-flatpak
 gvfs-backends
 kolourpaint
 neofetch
