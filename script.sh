@@ -113,6 +113,8 @@ sudo systemctl mask hybrid-sleep.target
 sudo systemctl enable ufw
 sudo ufw enable
 sudo plymouth-set-default-theme -R homeworld
+sudo ufw allow 59010/udp
+sudo ufw allow 59011/udp
 
 
 #-------------------------- CONFIGURAÇÃO DO FLATPAK ---------------------------#
