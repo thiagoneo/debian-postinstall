@@ -33,15 +33,9 @@ echo ""
 sudo apt upgrade -y
 
 
-#------------------------ INSTALAR SLICK GREETER ------------------------------#
-echo "INSTALANDO SLICK GREETER..."
-sudo apt install slick-greeter lightdm-settings numlockx -y
-
 #--------------- DESINSTALAR PACOTES DESNECESSÁRIOS - PARTE 1 -----------------#
 sudo apt purge $(cat $SCR_DIRECTORY/lista-remocao.txt) -y
 sudo apt autoremove --purge -y
-sudo dpkg-reconfigure lightdm lightdm-settings slick-greeter numlockx 
-
 
 #--------------------- INSTALAR PACOTES DO REPOSITÓRIO ------------------------#
 echo ""
