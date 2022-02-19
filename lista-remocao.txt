@@ -24,7 +24,6 @@ fwupd
 hv3
 libreoffice*
 libuno*
-lightdm-gtk-greeter
 orca
 quodlibet
 system-config-printer*
