@@ -4,7 +4,8 @@
 #   info -f grub -n 'Simple configuration'
 
 GRUB_DEFAULT=saved
-GRUB_TIMEOUT=5
+GRUB_TIMEOUT=1
+GRUB_TIMEOUT_STYLE=hidden
 GRUB_SAVEDEFAULT=true
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash zswap.enabled=1 zswap.compressor=lz4hc zswap.zpool=z3fold sysrq_always_enabled=1"
