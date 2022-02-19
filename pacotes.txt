@@ -39,7 +39,7 @@ htop
 hyphen-pt-br
 idle3
 libavcodec-extra
-lightdm-settings
+lightdm-gtk-greeter-settings
 musescore3
 numlockx
 p7zip-full
@@ -51,7 +51,6 @@ qt5ct
 qt5-style-plugins
 rar
 sassc
-slick-greeter
 synaptic
 texlive-fonts-extra
 timeshift
