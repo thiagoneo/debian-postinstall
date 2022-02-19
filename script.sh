@@ -110,7 +110,7 @@ echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 sudo systemctl mask hybrid-sleep.target
 sudo systemctl enable ufw
 sudo ufw enable
-cp /usr/share/desktop-base/debian-logos/logo-text-version-64.png /usr/share/plymouth/themes/spinner/watermark.png
+sudo cp /usr/share/desktop-base/debian-logos/logo-text-version-64.png /usr/share/plymouth/themes/spinner/watermark.png
 sudo plymouth-set-default-theme -R spinner
 sudo ufw allow 59010/udp
 sudo ufw allow 59011/udp
