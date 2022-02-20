@@ -1,14 +1,7 @@
-com.adobe.Flash-Player-Projector
 com.github.tchx84.Flatseal
 de.haeckerfelix.Fragments
-org.apache.netbeans
-org.eclipse.Java
 org.geogebra.GeoGebra
 org.gnome.Calculator
-org.gnome.Mines
-org.gnome.Nibbles
-org.gnome.Quadrapassel
-org.gnome.Sudoku
 org.gtk.Gtk3theme.Matcha-azul
 org.gtk.Gtk3theme.Matcha-dark-azul
 org.gtk.Gtk3theme.Matcha-light-azul
