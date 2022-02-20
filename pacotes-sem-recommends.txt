@@ -1,6 +1,16 @@
 dconf-editor
 dunst
 evince
+fonts-comfortaa
+fonts-croscore
+fonts-crosextra-caladea
+fonts-crosextra-carlito
+fonts-linuxlibertine
+fonts-lobstertwo
+fonts-noto-core
+fonts-noto-cjk
+fonts-open-sans
+fonts-sil-gentiumplus
 gdebi
 gigolo
 gnome-packagekit
@@ -12,4 +22,5 @@ neofetch
 package-update-indicator
 software-properties-gtk
 supertux
+texlive-fonts-extra
 texlive-fonts-recommended
