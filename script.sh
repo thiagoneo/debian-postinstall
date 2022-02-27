@@ -129,7 +129,6 @@ sudo chown -R $USER:$USER $HOME/.config $HOME/.local $HOME/.var
 cd $SCR_DIRECTORY/
 git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
 cd Fluent-gtk-theme/
-sudo ./install.sh --icon debian
 sudo ./install.sh --icon debian --tweaks round
 cd /usr/share/themes/
 sudo tar -xzvf $SCR_DIRECTORY/fluent-theme-patch.tar.gz
@@ -152,12 +151,6 @@ sudo apt install ostree appstream-util -y
 cd $SCR_DIRECTORY/
 git clone https://github.com/refi64/stylepak.git
 cd stylepak
-bash stylepak install-system Fluent
-bash stylepak install-system Fluent-compact
-bash stylepak install-system Fluent-dark
-bash stylepak install-system Fluent-dark-compact
-bash stylepak install-system Fluent-light
-bash stylepak install-system Fluent-light-compact
 bash stylepak install-system Fluent-round
 bash stylepak install-system Fluent-round-compact
 bash stylepak install-system Fluent-round-dark
