@@ -6,7 +6,7 @@ set -e
 SCR_DIRECTORY=`pwd`
 
 #------------------------- CONFIGURAR REPOSITÓRIOS ----------------------------#
-sudo apt update
+sudo echo ""
 while :; do sudo -v; sleep 59; done &
 infiloop=$!
 
