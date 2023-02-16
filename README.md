@@ -1,5 +1,5 @@
 # debian-postinstall
-Script de pós instalação do Debian 11 XFCE, com configuraç.
+Script de pós instalação do Debian 11 XFCE, com configurações personalizadas.
 
 Uso:
 1. Instalar o Debian com a ISO netinstall, escolhendo o XFCE como ambiente de desktop.
